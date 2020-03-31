@@ -1,0 +1,12 @@
+.KursCard {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 10px;
+}
+.KursCard-bild {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.KursCard-titel {
+  font-weight: 700;
+  font-size: 1.35em;
+}

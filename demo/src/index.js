@@ -7,7 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Interface />
+    <Interface UserName="Max" />
   </React.StrictMode>,
   document.getElementById("root")
 );
