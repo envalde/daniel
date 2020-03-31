@@ -25,7 +25,7 @@ class KursCard extends Component {
               label={`${this.props.KursFortschritt}%`}
             />
             <br />
-            <Button variant="primary">Ansehen</Button>
+            <Button variant="outline-primary">Ansehen</Button>
           </Card.Body>
         </Card>
       </div>

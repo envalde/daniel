@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #505763;
 }
 .btn {
   border-radius: 0px;
@@ -22,4 +23,24 @@ body {
 }
 .section {
   margin-top: 30px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33em;
+  color: #29303b;
+}
+.subtitle {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.47em;
+  color: #505763;
+}
+.alert-secondary {
+  background: #f7f8fa;
+  border: 1px solid #dedfe0;
+  border-radius: 3px;
+  padding: 16px 48px 16px 16px;
+  margin-top: 20px;
+  position: relative;
 }

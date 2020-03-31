@@ -1,4 +1,17 @@
 .Interface-heading {
-  font-size: 1.7em;
-  color: rgb(20, 20, 20);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33em;
+  color: #29303b;
+}
+.info-section {
+  background: #f7f8fa;
+  border: 1px solid #dedfe0;
+  border-radius: 3px;
+  padding: 16px 48px 16px 16px;
+  margin-top: 20px;
+  position: relative;
+}
+.alert-text {
+  color: #505763;
 }

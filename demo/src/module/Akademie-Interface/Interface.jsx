@@ -6,6 +6,7 @@ import Navigation from "../../component/Navigation-no/Navigation";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Alert from "react-bootstrap/Alert";
 
 class Interface extends Component {
   render() {
@@ -16,11 +17,20 @@ class Interface extends Component {
           <Container>
             <Row>
               <Col>
-                <h2 className="bold Interface-heading">
-                  Hallo {this.props.UserName}, folgende Kurse sind für dich
-                  verfügbar
+                <h2 className="bold title">
+                  Hallo {this.props.UserName}, mach da weiter, wo du aufgehört
+                  hast
                 </h2>
-                <p>Hier hast du all deine Kurse und Lektionen im Blick</p>
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <p className="subtitle">Startklar zum weiterlernen?</p>
+              </Col>
+              <Col className="d-flex justify-content-end">
+                <a href="#home">
+                  Alle verfügbaren Kurse <i class="lni lni-chevron-right"></i>
+                </a>
               </Col>
             </Row>
             <Row>
@@ -28,7 +38,7 @@ class Interface extends Component {
                 <KursCard
                   KursBild="https://images.unsplash.com/photo-1565966245341-5a3f55bbf545?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
                   KursTitel="Einführung in die Lagerlogistik"
-                  KursBeschreibung="In diesem Kurs geht es um die Lagerlogistig inklusive Verwaltung und sowas halt."
+                  KursBeschreibung="In diesem Kursdasd  geht es um die Lagerlogistig inklusive Verwaltung und sowas halt."
                   KursFortschritt="10"
                 />
               </Col>
@@ -51,17 +61,43 @@ class Interface extends Component {
             </Row>
           </Container>
         </div>
+        <div className="mt-3">
+          <Container>
+            <Row>
+              <Col>
+                <Alert variant="secondary">
+                  <span className="alert-text">
+                    <b>Zertfizierungen ansehen oder herunterladen</b> - Laden
+                    Sie ihre Zertifizierungen herunter oder sehen sie sich diese
+                    an.
+                  </span>
+                  <a href=""> Meine Zertifizierungen</a>
+                </Alert>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         <div className="webinare section">
           <Container>
             <Row>
               <Col md>
-                <h2 className="bold Interface-heading">
+                <h2 className="bold title">
                   Folgende Live Schulungen sind für dich vorgemerkt
                 </h2>
-                <p>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={8}>
+                <p className="subtitle">
                   Speicher dir kommende Live Schulungen einfach in deinen
                   Kalender ab.
                 </p>
+              </Col>
+              <Col className="d-flex justify-content-end">
+                <a href="#live">
+                  Alle verfügbaren Live Schulungen{" "}
+                  <i class="lni lni-chevron-right"></i>
+                </a>
               </Col>
             </Row>
             <Row>
