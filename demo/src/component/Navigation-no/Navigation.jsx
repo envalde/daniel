@@ -14,7 +14,7 @@ import { Component } from "react";
 class Navigation extends Component {
   render() {
     return (
-      <>
+      <div className="wrapper">
         <div className="Navigation">
           <Navbar bg="" expand="lg">
             <Container>
@@ -70,7 +70,7 @@ class Navigation extends Component {
             </Row>
           </Container>
         </div>
-      </>
+      </div>
     );
   }
 }
