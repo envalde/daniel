@@ -48,7 +48,7 @@ class Navigation extends Component {
                     placeholder="Search"
                     className="mr-sm-2"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="outline-primary">Suchen</Button>
                 </Form>
               </Navbar.Collapse>
             </Container>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Kurs.css";
+import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
@@ -14,16 +15,19 @@ class KursCard extends Component {
   render() {
     return (
       <div className="KursCard">
-        <img className="KursCard-bild" src={this.props.KursBild} alt="" />
-        <h3 className="KursCard-titel">{this.props.KursTitel}</h3>
-        <p className="KursCard-beschreibung">{this.props.KursBeschreibung}</p>
-        <p className="KursCard-fortschritt">
-          <ProgressBar
-            now={this.props.KursFortschritt}
-            label={`${this.props.KursFortschritt}%`}
-          />
-        </p>
-        <Button variant="primary">Ansehen</Button>{" "}
+        <Card style={{ width: "100%" }}>
+          <Card.Img variant="top" src={this.props.KursBild} />
+          <Card.Body>
+            <Card.Title>{this.props.KursTitel}</Card.Title>
+            <Card.Text>{this.props.KursBeschreibung}</Card.Text>
+            <ProgressBar
+              now={this.props.KursFortschritt}
+              label={`${this.props.KursFortschritt}%`}
+            />
+            <br />
+            <Button variant="primary">Ansehen</Button>
+          </Card.Body>
+        </Card>
       </div>
     );
   }

@@ -11,12 +11,14 @@ class WebinarCard extends Component {
   render() {
     return (
       <div className="WebinarCard">
-        <Card style={{ width: "18rem" }}>
+        <Card style={{ width: "100%" }}>
           <Card.Img variant="top" src={this.props.WebinarBild} />
           <Card.Body>
             <Card.Title>{this.props.WebinarTitel}</Card.Title>
             <Card.Text>{this.props.WebinarBeschreinung}</Card.Text>
-            <Button variant="primary">Teilnehmen</Button>
+            <Button variant="primary">
+              Teilnehmen oder im Kalender vormerken
+            </Button>
           </Card.Body>
         </Card>
       </div>
