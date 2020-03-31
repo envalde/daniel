@@ -54,7 +54,16 @@ function Navigation() {
       <div className="top-navigation">
         <Container>
           <Row>
-            <Col>Erfahren Sie wie Enval mit COVID-19 umgeht</Col>
+            <Col>
+              <ul className="Menu-items">
+                <li>
+                  <i className="lni lni-code"></i>Programmieren
+                </li>
+                <li>
+                  <i className="lni lni-bookmark"></i>Gespeicherte Kurse
+                </li>
+              </ul>
+            </Col>
           </Row>
         </Container>
       </div>
